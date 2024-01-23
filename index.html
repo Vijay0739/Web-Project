@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | TestFreshers</title>
+    <style>
+        *{
+            margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        }
+        body {
+         color: #4a4a4a;
+         font-size: 1em;
+         font-weight: 400;
+         line-height: 1.5;
+         }
+          
+
+         body, button, input, optgroup, select, textarea {
+          font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: whitesmoke;
+            height: 60px;
+        }
+
+        #testlogo{
+            height: 40px;
+        }
+
+        #profile1{
+            color: #199dd3;
+        }
+        #data1{
+            border: 2px solid gray;
+            height: 330px;
+            width: 700px;
+            padding-left: 15px;
+        }
+        #data2{
+            border: 2px solid gray;
+            height: 330px;
+            width: 700px;
+            padding-left: 15px;
+            margin-left: 10px;
+        }
+
+        #datas{
+            height: 500px;
+            display: flex;
+            justify-content: space-evenly;
+            padding-left: 50px;
+            padding-right: 30px;
+
+        }
+
+
+        #heading1{
+            padding-left: 100px;
+            margin: 0%;
+            padding: 0%;
+            padding-left: 90px;
+            height: 50px;
+        }
+
+        .pie{
+            color: #00d1b2;
+        }
+
+        .editpro{
+            padding-top: 5px;
+            padding-left: 10px;
+            border-color: #199dd3;
+            
+        }
+
+        .editbtn{
+            width: 60px;
+            height: 30px;
+            background-color: #199dd3;
+            border-color: transparent;
+            color: #fff;
+            border-radius: 2px;
+        }
+        #data11{
+            display: flex;
+        }
+
+        #data12{
+            color: #199dd3;
+            margin-top: 15px;
+            display: flex;
+        }
+        #data18{
+            display: flex;
+            width: 300px;
+            justify-content: space-between;
+        }
+        #data13{
+            display: flex;
+            margin-top: 10px;
+        }
+        #data14{
+            display: flex;
+        }
+        #data15{
+            display: flex;
+        }
+        #data16{
+            display: flex;
+        }
+        #data17{
+            display: flex;
+        }
+
+        .addcolor{
+            color: #00d1b2;
+        }
+
+        #pp1{
+            display: flex;
+        }
+
+        #pc1{
+            display: flex;
+        }
+     .nav2{
+     margin-right: 80px;
+     }
+ 
+        
+
+     .dropdown {
+     position: relative;
+     display: inline-block;
+     }
+
+     .dropbtn {
+     background-color: transparent;
+      color: #4a4a4a;
+     border: none;
+     cursor: pointer;
+      padding: 10px 12px;
+     font-size: 16px;
+     }
+
+     .dropdown-content {
+      display: none;
+      position: absolute;
+     background-color: #f9f9f9;
+      min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+     }
+
+       .dropdown-content a {
+     color: #4a4a4a;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+      }
+
+      .dropdown-content a:hover {
+      background-color: #f1f1f1;
+      }
+
+        .dropdown:hover .dropdown-content {
+          display: block;
+      }
+
+      #task1{
+         display: flex;
+         margin-top: 5px;
+         margin-bottom: 20px;
+        height: 30px;
+        width: 350px;
+        justify-content: space-between;
+      }
+
+      #numcolor{
+          width: 150px;
+          height: 30px;
+          background-color: orange;
+          border-radius: 4px;
+          border: transparent;
+          color: white;
+      }
+
+      #task2{
+        display: flex;
+        margin-bottom: 20px;
+        height: 30px;
+        width: 350px;
+        justify-content: space-between;
+      }
+
+      #patcolor{
+        width: 150px;
+        height: 30px;
+        background-color: rgb(210, 116, 116);
+        color: white;
+        border-radius: 4px;
+        border: transparent;
+      }
+
+      #task3{
+        display: flex;
+        margin-bottom: 20px;
+        height: 30px;
+        width: 350px;
+        justify-content: space-between;
+      }
+
+      #strcolor{
+        width: 150px;
+          height: 30px;
+          background-color: green;
+          color: white;
+          border: transparent;
+          border-radius: 4px;
+      }
+
+      #task4{
+        display: flex;
+        margin-bottom: 10px;
+      }
+
+      .divcolor{
+        background-color: purple;
+        border: transparent;
+        border-radius: 3px;
+        
+      }
+      .jstask1{
+        display: flex;
+        width: 500px;
+        justify-content: space-between;
+        margin-left: 20px;
+      }
+
+      .ahover{
+        text-decoration: none;
+        color: white;
+      }
+
+      .navigateButton1{
+        width: 100px;
+        border-radius: 5px;
+        border: transparent;
+        color: white ;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav1">
+            <img src="./logo.e488c16.png" alt="" id="testlogo">
+        </div>
+        <div class="nav2">
+            
+        </div>
+<div class="nav2">
+    <div class="dropdown">
+        <button class="dropbtn">Quizzes</button>
+        <div class="dropdown-content">
+            <a href="./Quizz.html">Active Quizzes</a>
+            <a href="">Quiz Results</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Profile</button>
+        <div class="dropdown-content">
+            <a href="./index.html">View Profile</a>
+            <a href="">Change Password</a>
+            <a href="">Logout</a>
+        </div>
+    </div>
+</div>
+
+    </nav>
+    <div id="heading1">
+        <h1 id="profile1">My Profile</h1>
+    </div>
+    <div id="datas">
+        <div id="datas">
+            <div id="data1">
+                <div id="data11">
+                    <span class="pie">
+                        <h2>Personal Information</h2>
+                    </span>
+                    <span class="editpro">
+                        <button class="editbtn" onclick="openEditForm()">Edit</button>
+                    </span>
+                </div>
+                <div id="data12">
+                    <h3 id="fullName"></h3>
+                </div>
+                <div id="data13">
+                    <h3 id="emaild" class="addcolor">Email :</h3>
+                    <h3 id="email"></h3>
+                </div>
+                <div id="data14">
+                    <h3 id="phno" class="addcolor">Phone No :</h3>
+                    <h3 id="phoneNo"></h3>
+                </div>
+                <div id="data15">
+                    <h3 id="gen" class="addcolor">Gender :</h3>
+                    <h3 id="gender"></h3>
+                </div>
+                <div id="data16">
+                    <h3 id="dateofbirth" class="addcolor">Date of Birth :</h3>
+                    <h3 id="dob"></h3>
+                </div>
+                <div id="data17">
+                    <h3 id="add" class="addcolor">Address :</h3>
+                    <h3 id="address"></h3>
+                </div>
+                <div id="data18">
+                    <div id="pp1">
+                    <h3 id="pp" class="addcolor">Passport :</h3>
+                    <h3 id="passport"></h3>
+                    </div>
+                    <div id="pc1">
+                    <h3 id="pc" class="addcolor">Pancard :</h3>
+                    <h3 id="pancard"></h3>
+                    </div>
+                </div>
+            </div>
+
+    <div id="data2">
+     <div id="task1">
+        <h3 class="addcolor">Numbers Programs:</h3>
+        <button class="navigateButton" id="numcolor" onclick="navigateToTask('NumberProgram.html')">NumberWorld</button>
+     </div>
+     <div id="task2">
+        <h3 class="addcolor">Pattern Programs:</h3>
+        <button class="navigateButton" id="patcolor" onclick="navigateToTask1('PatternProgram.html')">PatternWorld</button>
+     </div>
+     <div id="task3">
+        <h3 class="addcolor">String Programs :</h3>
+        <button class="navigateButton" id="strcolor" onclick="navigateToTask2('StringProgram.html')">StringWorld</button>
+     </div>
+     <div id="task4">
+        <h3 class="addcolor">JS Tasks :</h3>
+              <div class="jstask1">
+                <button class="navigateButton1" id="jscolor1" onclick="navigatetojstask1('stopwatch.html')">STOP WATCH</button>
+                <button class="navigateButton1" id="jscolor2" onclick="navigatetojstask2('StringProgram.html')">SLIDER</button>
+                <button class="navigateButton1" id="jscolor3" onclick="navigatetojstask3('StringProgram.html')">CALCULATOR</button>
+                <button class="navigateButton1" id="jscolor4" onclick="navigatetojstask4('StringProgram.html')">DISCO LIGHT</button>
+              </div>
+     </div>
+    </div>
+
+ </div>
+
+
+    <script>
+        const userData = JSON.parse(localStorage.getItem("userData"));
+
+        document.getElementById("fullName").textContent = userData.fullName;
+        document.getElementById("email").textContent = userData.email;
+        document.getElementById("phoneNo").textContent = userData.phoneNo;
+        document.getElementById("gender").textContent = userData.gender;
+        document.getElementById("dob").textContent = userData.dob;
+        document.getElementById("address").textContent = userData.address;
+        document.getElementById("passport").textContent = userData.passport;
+        document.getElementById("pancard").textContent = userData.pancard;
+
+        function openEditForm() {
+            window.location.href = "edit_form.html";
+        }
+
+
+       {
+        const jscolor1=document.querySelector("#jscolor1")
+       jscolor1.style.backgroundColor=colorRandom();
+       }
+        
+       
+       {
+        const jscolor2=document.querySelector("#jscolor2")
+       jscolor2.style.backgroundColor=colorRandom();
+       }
+
+       
+       {
+        const jscolor3=document.querySelector("#jscolor3")
+       jscolor3.style.backgroundColor=colorRandom();
+       }
+
+       
+       {
+        const jscolor4=document.querySelector("#jscolor4")
+       jscolor4.style.backgroundColor=colorRandom();
+       }
+
+
+     function navigateToTask(taskPage) {
+     if (taskPage) {
+        window.location.href = taskPage;
+     }
+     }
+       
+     function navigateToTask1(taskPage) {
+     if (taskPage) {
+        window.location.href = taskPage;
+     }
+     }
+
+     function navigateToTask2(taskPage) {
+     if (taskPage) {
+        window.location.href = taskPage;
+     }
+     }
+
+     function navigatetojstask1(taskPage) {
+    if (taskPage) {
+        window.location.href = taskPage;
+    }
+}
+
+
+function colorRandom() {
+    const letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+
+     
+       
+        document.addEventListener("DOMContentLoaded", () => {
+     const addTaskButtons = document.querySelectorAll(".addTaskButton");
+
+     addTaskButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const taskName = button.getAttribute("data-task");
+            const taskContainer = document.querySelector(`#${taskName}`);
+            const taskDiv = document.createElement("div");
+            taskDiv.className = "task-block";
+            taskDiv.textContent = taskName;
+            taskDiv.style.maxWidth = "200px";
+            taskDiv.style.margin = "10px";
+            taskDiv.style.backgroundColor = getRandomColor();
+            taskContainer.appendChild(taskDiv);
+        });
+    });
+});
+
+
+    </script>
+</body>
+</html>
